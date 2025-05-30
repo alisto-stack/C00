@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir text_directory
+mkdir test_directory

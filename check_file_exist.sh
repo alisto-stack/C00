@@ -1,7 +1,12 @@
 #!/bin/bash
-echo "Sample.txt"
-if [ -f "$Sample.txt" ]; then
-echo "Le fichier '$Sample.txt'existe."
+
+echo "Entrez le nom du fichier :"
+read filename
+
+if [ -f "$filename" ]; then
+  echo "Le fichier '$filename' existe."
 else
-echo "Le fichier '$Sample.txt' n'existe pas."
+  echo "Le fichier '$filename' n'existe pas."
 fi
+
+exit 0
